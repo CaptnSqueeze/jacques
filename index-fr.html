@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>My Website</title>
+	<title>Jacques Consulting</title>
 	<style>
 	
 	/* Basic CSS styles */
@@ -10,7 +10,8 @@
 
 	body {
   	margin: 0;
-	  font-family: Arial, Helvetica, sans-serif;
+	  font-family: 'Courier New', monospace;
+	  font-size: 30px;
 	}
 
 	.business-name {
@@ -18,6 +19,7 @@
 		color: #f2f2f2;
 		height: 20px;
 		margin: 20px;
+		font-size: 100px;
 		}
 
 	.slogan {
@@ -25,8 +27,9 @@
 		background-color: #333;
 		color: #f2f2f2;
 		height: 120px;
-		font-size: 13px;
+		font-size: 36px;
 		margin: 20px;
+		padding-top: 50px;
 		}
 
 	.topnav {
@@ -40,7 +43,7 @@
 	  text-align: center;
 	  padding: 14px 16px;
 	  text-decoration: none;
-	  font-size:20px;
+	  font-size:30px;
 
 	}
 
@@ -65,8 +68,8 @@
 
 	.section{
 		margin: 20px;
-		padding-right:99px;
-	  padding-left: 99px;
+		padding-right:150px;
+	  	padding-left: 150px;
 	}
 
 	/* Style for the gallery images */
@@ -80,13 +83,41 @@
 	.portfolio-images-list{
 		list-style-type: none;
 		margin: 20px 0;
+		width: 100%;
+	}
+
+	.portfolio-images-list:not(:last-child){
+		margin-bottom: 5px;
 	}
 
 	.portfolio img {
-		width: 606;
+		width: 400;
 		height: 428;
 		float: left;
 	}
+
+	.image-list-container{
+		  list-style-type: none;
+		  display: block;
+		  width: 100%;
+		  padding: 0;
+		}
+	
+	/*column gap between desc and images */
+	.image-list-container>li {
+	  display: flex;
+	  column-gap: 40px;
+	  text-align: left;
+	  align-items: center;
+  		justify-content: center;
+	}
+
+	.image-list-container>li:nth-child(even) {
+	  flex-direction: row-reverse;
+	  text-align: right;
+	}
+
+	/*vertical line
 
 	/* Style for the "Back to Top" button */
 	.back-to-top {
@@ -105,18 +136,15 @@
 	.back-to-top:hover {
 		background-color: #666;
 	}
-
 	</style>
 
 
 
 </head>
 <body>
-
-	
 	<div class="topnav">
-		<h1 class="business-name">J A C Q U E S</h1>
-		<h2 class="slogan">CUSTOM BUSINESS SOLUTIONS</h2>
+		<h1 class="business-name">JACQUES</h1>
+		<h2 class="slogan">REPORTING MADE EASY</h2>
 	  <div class="topnav-right">
 	    <a href="#">About</a>
 	    <a href="#services">Services</a>
@@ -129,34 +157,32 @@
 
 	<section class="section" id="about">
 		<h2>About</h2>
-		<p>Page Francaise Excel and automation consulting based in Ottawa, Canada. Extensive experience in creating automated reports for a wide range of audiences, including working tools to steamline business processes, automated monthly reporting and executive summaries. Expertise in producing bilingual materials and providing translation services from English to French.</p>
+		<p>La page en français sera disponible bientôt!</p>
 		<a href="#" class="back-to-top">Back to Top</a>
 	</section>
 	<section class="section" id="services">
 		<h2>Services</h2>
 		<ul>
-			<li class="services-list">Creating automated reports, summaries and dashboards using Excel VBA.</li>
-			<li class="services-list">Automation of existing, manual data transformation and reporting workflows.</li>
-			<li class="services-list">Basic web design.</li>
-			<li class="services-list">Outlook / mailing list automation.</li>
-			<li class="services-list">Translation of website content or other text from English to French.</li>
+			<li class="services-list">Creating automated reports, summaries and executive dashboards using Excel</li>
+			<li class="services-list">Automation of existing data transformation and reporting workflows</li>
+			<li class="services-list">Data processing and visualization solutions with Python</li>
+			<li class="services-list">Translation of website content or other text from English to French</li>
 		</ul>
-		<p></p>
-		<p></p>
-		<p></p>
 		<a href="#" class="back-to-top">Back to Top</a>
 	</section>
 	<section class="section" id="portfolio">
 		<h2>Portfolio</h2>
-			<ul>
-				<li class="portfolio-images-list"><img src="image1.png" alt="Image 1">Some Text Describing This</li>
-				<li class="portfolio-images-list"><img src="image2.png" alt="Image 2">Some More Text but justified left</li>
+			<ul class="image-list-container">
+				<li class="portfolio-images-list"><div class="vl"></div><img src="image3.png" alt="Image 2">An automatically refreshable sales report built in Excel which provides the ability to view a high level summary and drill down into individual line items. Also has the ability to print to PDF at the touch of a button.</li>
+				<li class="portfolio-images-list"><div class="vl"></div><img src="image2.png" alt="Image 3">A custom RSS Scanning solution built for media monitoring purposes. This tool scans a list of RSS feeds for keyword matches and outputs the results into a file which can then be further analyzsed.</li>
+				<li class="portfolio-images-list"><div class="vl"></div><img src="image1.png" alt="Image 1" height="800" width="1600">A PowerBI dashboard which enables users to drill down into the specifics of entities listed in the left panel. This dashboard is refreshed automatically at the click of one button, which triggers data processing and refreshing each month. Data was redacted to protect the client's privacy.</li>
+
 			</ul>
 	</section>
 	<section class="section" id="contact">
 		<h2>Contact</h2>
 		<p>Get in touch with us today!</p>
-		<p>e-mail: leguerrier.j@gmail.com</p>
+		<p>e-mail: email@business.com</p>
 	</section>
 
 </body>

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>My Website</title>
+	<title>Jacques Consulting</title>
 	<style>
 	
 	/* Basic CSS styles */
@@ -11,7 +11,7 @@
 	body {
   	margin: 0;
 	  font-family: 'Courier New', monospace;
-	  font-size: 18px;
+	  font-size: 30px;
 	}
 
 	.business-name {
@@ -19,7 +19,7 @@
 		color: #f2f2f2;
 		height: 20px;
 		margin: 20px;
-		font-size: 50px;
+		font-size: 100px;
 		}
 
 	.slogan {
@@ -27,9 +27,9 @@
 		background-color: #333;
 		color: #f2f2f2;
 		height: 120px;
-		font-size: 18px;
+		font-size: 36px;
 		margin: 20px;
-		padding-top: 5px;
+		padding-top: 50px;
 		}
 
 	.topnav {
@@ -43,7 +43,7 @@
 	  text-align: center;
 	  padding: 14px 16px;
 	  text-decoration: none;
-	  font-size:20px;
+	  font-size:30px;
 
 	}
 
@@ -83,6 +83,7 @@
 	.portfolio-images-list{
 		list-style-type: none;
 		margin: 20px 0;
+		width: 100%;
 	}
 
 	.portfolio-images-list:not(:last-child){
@@ -106,11 +107,14 @@
 	.image-list-container>li {
 	  display: flex;
 	  column-gap: 40px;
-	  align-items: flex-start;
+	  text-align: left;
+	  align-items: center;
+  		justify-content: center;
 	}
 
 	.image-list-container>li:nth-child(even) {
 	  flex-direction: row-reverse;
+	  text-align: right;
 	}
 
 	/*vertical line
@@ -153,7 +157,7 @@
 
 	<section class="section" id="about">
 		<h2>About</h2>
-		<p>Excel and automation consulting based in Ottawa, Canada. Extensive experience in creating automated reporting5 tools that automate repetitive business processes. Expertise in producing bilingual materials and providing translation services from English to French.</p>
+		<p>Excel and automation consulting based in Ottawa, Canada. Extensive experience in creating automated reporting tools that automate repetitive business processes. Expertise in producing bilingual materials and providing translation services from English to French.</p>
 		<a href="#" class="back-to-top">Back to Top</a>
 	</section>
 	<section class="section" id="services">
@@ -169,16 +173,16 @@
 	<section class="section" id="portfolio">
 		<h2>Portfolio</h2>
 			<ul class="image-list-container">
-				<li class="portfolio-images-list"><div class="vl"></div><img src="image1.png" alt="Image 1">Some Text Describing This</li>
-				<li class="portfolio-images-list"><div class="vl"></div><img src="image2.png" alt="Image 2">Some More Text but justified left</li>
-				<li class="portfolio-images-list"><div class="vl"></div><img src="image1.png" alt="Image 1">Some Text Describing This</li>
-				<li class="portfolio-images-list"><div class="vl"></div><img src="image2.png" alt="Image 2">Some More Text but justified left</li>
+				<li class="portfolio-images-list"><div class="vl"></div><img src="image3.png" alt="Image 2">An automatically refreshable sales report built in Excel which provides the ability to view a high level summary and drill down into individual line items. Also has the ability to print to PDF at the touch of a button.</li>
+				<li class="portfolio-images-list"><div class="vl"></div><img src="image2.png" alt="Image 3">A custom RSS Scanning solution built for media monitoring purposes. This tool scans a list of RSS feeds for keyword matches and outputs the results into a file which can then be further analyzsed.</li>
+				<li class="portfolio-images-list"><div class="vl"></div><img src="image1.png" alt="Image 1" height="800" width="1600">A PowerBI dashboard which enables users to drill down into the specifics of entities listed in the left panel. This dashboard is refreshed automatically at the click of one button, which triggers data processing and refreshing each month. Data was redacted to protect the client's privacy.</li>
+
 			</ul>
 	</section>
 	<section class="section" id="contact">
 		<h2>Contact</h2>
 		<p>Get in touch with us today!</p>
-		<p>e-mail: leguerrier.j@gmail.com</p>
+		<p>e-mail: email@business.com</p>
 	</section>
 
 </body>
