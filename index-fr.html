@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Jacques Consulting</title>
+	<style>
+	
+	/* Basic CSS styles */
+	/* Style for the main navigation */
+
+	body {
+  	margin: 0;
+	  font-family: 'Courier New', monospace;
+	  font-size: 30px;
+	}
+
+	.business-name {
+		background-color: #333;
+		color: #f2f2f2;
+		height: 20px;
+		margin: 20px;
+		font-size: 100px;
+		}
+
+	.slogan {
+		overflow: hidden;
+		background-color: #333;
+		color: #f2f2f2;
+		height: 120px;
+		font-size: 36px;
+		margin: 20px;
+		padding-top: 50px;
+		}
+
+	.topnav {
+	  overflow: hidden;
+	  background-color: #333;
+	}
+
+	.topnav a {
+	  float: left;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size:30px;
+
+	}
+
+	.topnav a:hover {
+		text-decoration: underline white;
+		text-underline-offset: 8px;
+	}
+
+	.topnav a.active {
+	  background-color: #04AA6D;
+	  color: white;
+	}
+
+	.topnav-right {
+		border-bottom: 1px;
+	  	float: right;
+	}
+
+	.services-list{
+		margin: 10px 0;
+	}
+
+	.section{
+		margin: 20px;
+		padding-right:150px;
+	  	padding-left: 150px;
+	}
+
+	/* Style for the gallery images */
+	.portfolio {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 20px;
+		margin-top: 40px;
+	}
+
+	.portfolio-images-list{
+		list-style-type: none;
+		margin: 20px 0;
+		width: 100%;
+	}
+
+	.portfolio-images-list:not(:last-child){
+		margin-bottom: 5px;
+	}
+
+	.portfolio img {
+		width: 400;
+		height: 428;
+		float: left;
+	}
+
+	.image-list-container{
+		  list-style-type: none;
+		  display: block;
+		  width: 100%;
+		  padding: 0;
+		}
+	
+	/*column gap between desc and images */
+	.image-list-container>li {
+	  display: flex;
+	  column-gap: 40px;
+	  text-align: left;
+	  align-items: center;
+  		justify-content: center;
+	}
+
+	.image-list-container>li:nth-child(even) {
+	  flex-direction: row-reverse;
+	  text-align: right;
+	}
+
+	/*vertical line
+
+	/* Style for the "Back to Top" button */
+	.back-to-top {
+		display: block;
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		background-color: #333;
+		color: white;
+		padding: 10px;
+		border-radius: 0;
+		text-align: center;
+		font-size: 1.2em;
+	}
+
+	.back-to-top:hover {
+		background-color: #666;
+	}
+	</style>
+
+
+
+</head>
+<body>
+	<div class="topnav">
+		<h1 class="business-name">JACQUES</h1>
+		<h2 class="slogan">REPORTING MADE EASY</h2>
+	  <div class="topnav-right">
+	    <a href="#">About</a>
+	    <a href="#services">Services</a>
+	   	<a href="#portfolio">Portfolio</a>
+	   	<a href="#contact">Contact</a>
+
+	    <a href="index.html">English</a>
+	  </div>
+	</div>
+
+	<section class="section" id="about">
+		<h2>About</h2>
+		<p>La page en français sera disponible bientôt!</p>
+		<a href="#" class="back-to-top">Back to Top</a>
+	</section>
+	<section class="section" id="services">
+		<h2>Services</h2>
+		<ul>
+			<li class="services-list">Creating automated reports, summaries and executive dashboards using Excel</li>
+			<li class="services-list">Automation of existing data transformation and reporting workflows</li>
+			<li class="services-list">Data processing and visualization solutions with Python</li>
+			<li class="services-list">Translation of website content or other text from English to French</li>
+		</ul>
+		<a href="#" class="back-to-top">Back to Top</a>
+	</section>
+	<section class="section" id="portfolio">
+		<h2>Portfolio</h2>
+			<ul class="image-list-container">
+				<li class="portfolio-images-list"><div class="vl"></div><img src="image_3.png" alt="Image 2">An automatically refreshable sales report built in Excel which provides the ability to view a high level summary and drill down into individual line items. Also has the ability to print to PDF at the touch of a button.</li>
+				<li class="portfolio-images-list"><div class="vl"></div><img src="image_2.png" alt="Image 3">A custom RSS Scanning solution built for media monitoring purposes. This tool scans a list of RSS feeds for keyword matches and outputs the results into a file which can then be further analyzsed.</li>
+				<li class="portfolio-images-list"><div class="vl"></div><img src="image_1.png" alt="Image 1" height="600" width="1200">A PowerBI dashboard which enables users to drill down into the specifics of entities listed in the left panel. This dashboard is refreshed automatically at the click of one button, which triggers data processing and refreshing each month. Data was redacted to protect the client's privacy.</li>
+
+			</ul>
+	</section>
+	<section class="section" id="contact">
+		<h2>Contact</h2>
+		<p>Get in touch with us today!</p>
+		<p>e-mail: email@business.com</p>
+	</section>
+
+</body>
+</html>
